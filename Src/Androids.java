@@ -1,4 +1,4 @@
-public class Androids implements Smartphones {
+public class Androids implements Smartphones, LinuxOS {
     @Override
     public void call(String phoneNumber) {
         System.out.println("Android is calling " + phoneNumber);
@@ -12,5 +12,10 @@ public class Androids implements Smartphones {
     @Override
     public void internet(String website) {
         System.out.println("Android is browsing the internet on " + website);
+    }
+
+    @Override
+    public void runLinuxCommands() {
+        System.out.println("Android is running Linux commands.");
     }
 }

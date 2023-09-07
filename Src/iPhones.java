@@ -1,4 +1,4 @@
-public class iPhones implements Smartphones {
+public class iPhones implements Smartphones, IOS {
     @Override
     public void call(String phoneNumber) {
         System.out.println("iPhone is calling " + phoneNumber);
@@ -13,4 +13,10 @@ public class iPhones implements Smartphones {
     public void internet(String website) {
         System.out.println("iPhone is browsing the internet on " + website);
     }
+
+    @Override
+    public void runIOSCommands() {
+        System.out.println("iPhone is running iOS commands.");
+    }
+
 }
